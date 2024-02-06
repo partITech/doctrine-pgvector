@@ -58,7 +58,8 @@ text-embedding-3-large : 3072 (customizable)
 #### Mistral AI
 Mistral-embed : 1024
 
-Additionally, you should manually add an **HNSW** index to your vector's column.
+Additionally, you should manually add an **HNSW** index to your vector's column. 
+Be aware that dimension should be  2000 max for HNSW indexes.
 
 #### L2 distance
 ```sql
