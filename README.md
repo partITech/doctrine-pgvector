@@ -98,7 +98,9 @@ $query = $this->entityManager->createQuery(
 $query->setParameter('vector', $floatArray, 'vector');
 $results = $query->setMaxResults(5)->getResult();
 dump($results);
+```
 
+```php
 $qb = $this->entityManager->createQueryBuilder();
 $qb->select('e')
     ->from('App:Embeddings', 'e')
@@ -128,7 +130,9 @@ $query = $this->entityManager->createQuery(
 $query->setParameter('vector', $floatArray, 'vector');
 $results = $query->setMaxResults(5)->getResult();
 dump($results);
+```
 
+```php
 $qb = $this->entityManager->createQueryBuilder();
 $qb->select('e')
     ->addSelect('inner_product(e.vectors, :vector)')
@@ -158,7 +162,9 @@ $query = $this->entityManager->createQuery(
 $query->setParameter('vector', $floatArray, 'vector');
 $results = $query->setMaxResults(5)->getResult();
 dump($results);
+```
 
+```php
 $qb = $this->entityManager->createQueryBuilder();
 $qb->select('e')
     ->addSelect('cosine_similarity(e.vectors, :vector)')
