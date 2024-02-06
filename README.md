@@ -175,4 +175,3 @@ $qb->select('e')
 $result = $qb->getQuery()->getResult();
 dump($result);
 ```
-
