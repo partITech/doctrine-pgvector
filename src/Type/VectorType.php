@@ -66,6 +66,6 @@ class VectorType extends Type
             return 'vector(' . $column['length'] . ')';
         }
 
-        throw Exception::notSupported('Please specify dimensions in your entity with the length attribute:  #[ORM\Column(type: \'vector\', nullable: true, length: 1024)].');
+        return 'vector(1024)';
     }
 }
