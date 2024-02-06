@@ -52,6 +52,7 @@ If you use `symfony console make:entity` add manually the `length` parameter att
 #### For example OpenAi use these dimensions: 
 
 text-embedding-3-small : 1536
+
 text-embedding-3-large : 3072 (customizable)
 
 #### Mistral AI
