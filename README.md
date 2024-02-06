@@ -47,7 +47,7 @@ use Doctrine\ORM\Mapping as ORM;
   }
 ```
 
-If you use `symfony console make:entity` add manually the `length` parameter attribute as vector. Length is your model embedding's dimention.
+If you use `symfony console make:entity` add manually the `length` parameter attribute as vector. Length is your model embedding's dimension.
 
 #### For example OpenAi use these dimensions: 
 
