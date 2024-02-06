@@ -1,5 +1,5 @@
 
-# PGVector Bundle for Symfony
+# PGVector for Doctrine
 
 ## Description
 
