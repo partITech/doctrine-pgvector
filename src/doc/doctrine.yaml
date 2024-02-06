@@ -1,0 +1,10 @@
+doctrine:
+    dbal:
+        types:
+            vector: Partitech\DoctrinePgVector\Type\VectorType
+    orm:
+        dql:
+            string_functions:
+                distance: Partitech\DoctrinePgVector\Query\Distance
+                inner_product: Partitech\DoctrinePgVector\Query\InnerProduct
+                cosine_similarity: Partitech\DoctrinePgVector\Query\CosineSimilarity
