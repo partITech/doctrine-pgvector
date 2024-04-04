@@ -9,7 +9,7 @@ use Doctrine\DBAL\Types\Type;
 
 class VectorType extends Type
 {
-    public const string NAME = 'vector';
+    public const NAME = 'vector';
 
     public function convertToPHPValue(mixed $value, AbstractPlatform $platform): array
     {
