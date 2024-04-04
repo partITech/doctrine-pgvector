@@ -15,6 +15,7 @@ class VectorType extends Type
     {
 
         if (is_string($value)) {
+            $value = str_replace(['[', ']'], '', $value);
             return array_map('floatval', explode(',', $value));
         }
 
