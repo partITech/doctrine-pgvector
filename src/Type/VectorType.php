@@ -33,15 +33,15 @@ class VectorType extends Type
             return null;
         }
 
-        $floats = array_filter($value, function ($item) {
-            return is_float($item);
+        $values = array_filter($value, function ($item) {
+            return is_float($item) || is_int($item);
         });
 
-        if (count($floats) === 0) {
+        if (count($values) == 0) {
             return null;
         }
 
-        return '[' . implode(',', $floats) . ']';
+        return '[' . implode(',', $values) . ']';
 
     }
 
