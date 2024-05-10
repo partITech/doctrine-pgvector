@@ -26,18 +26,22 @@ class VectorType extends Type
         return [];
     }
 
-    public function convertToDatabaseValue(mixed $value, AbstractPlatform $platform): string
+    public function convertToDatabaseValue(mixed $value, AbstractPlatform $platform): ?string
     {
 
         if (!is_array($value) || count($value) === 0) {
-            return '[]';
+            return null;
         }
 
-        $floats = array_filter($value, function ($item) {
-            return is_float($item);
+        $values = array_filter($value, function ($item) {
+            return is_float($item) || is_int($item);
         });
 
-        return '[' . implode(',', $floats) . ']';
+        if (count($values) == 0) {
+            return null;
+        }
+
+        return '[' . implode(',', $values) . ']';
 
     }
 
