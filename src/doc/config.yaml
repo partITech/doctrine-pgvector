@@ -1,0 +1,21 @@
+projectName: "Doctrine PgVector"
+defaultDoc: "introduction.md"
+logoUrl: "/images/logo.svg"
+projectSource: "https://github.com/partITech/doctrine-pgvector"
+jumbotronSourceLinkCodeLink: "https://github.com/partITech/doctrine-pgvector"
+enableSearch: false
+jumbotron: true
+jumbotronHeader: "Doctrine Dbal & DQL functions for PgVector"
+jumbotronTextLine: "Power up your RAG app with PostgreSQL vector similarity search"
+jumbotronGetStartedLabel: "Get started"
+jumbotronGetStartedLink: "#main-content"
+jumbotronSourceLinkCodeLabel: "View on GitHub"
+jumbotronCodeLang: "php"
+jumbotronCodeContent: |
+  $qb = $this->entityManager->createQueryBuilder();
+  $qb->select('e')
+    ->from('App:Embeddings', 'e')
+    ->orderBy('distance(e.vectors, :vector)')
+    ->setParameter('vector', $floatArray, 'vector')
+    ->setMaxResults(5);
+  $result = $qb->getQuery()->getResult();

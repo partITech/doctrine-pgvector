@@ -1,11 +1,6 @@
 # Doctrine PgVector
 
-> [!TIP]
-> For more detailed information and comprehensive guides, please visit our [official documentation](https://doctrine-pgvector.partitech.com)
-
-
-Partitech Doctrine PgVector is a Doctrine extension for integrating PostgreSQL vector types into your PHP projects using Doctrine ORM. 
-This module simplifies using vectors in your database by providing calculation functions such as distance, inner product, and cosine similarity.
+Partitech Doctrine PgVector is a Doctrine extension for integrating PostgreSQL vector types into your PHP projects using Doctrine ORM. This module simplifies using vectors in your database by providing calculation functions such as distance, inner product, and cosine similarity.
 
 ## 📦 Installation
 
