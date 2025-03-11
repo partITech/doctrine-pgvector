@@ -1,4 +1,5 @@
 projectName: "Doctrine PgVector"
+title: "Doctrine PgVector"
 defaultDoc: "introduction.md"
 logoUrl: "/images/logo.svg"
 logoHref: "https://www.partitech.com/"
