@@ -1,6 +1,8 @@
 projectName: "Doctrine PgVector"
+title: "Doctrine PgVector"
 defaultDoc: "introduction.md"
 logoUrl: "/images/logo.svg"
+logoHref: "https://www.partitech.com/"
 projectSource: "https://github.com/partITech/doctrine-pgvector"
 jumbotronSourceLinkCodeLink: "https://github.com/partITech/doctrine-pgvector"
 enableSearch: false
